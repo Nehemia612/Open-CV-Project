@@ -81,12 +81,12 @@ int main(){
                     x = ((x_pixel - cx)*z) / fx;
                     y = ((y_pixel - cy)*z) / fy;
 
-                    std::string koordinat = cv::format("(%.2lf, %.2lf)", x, y);
+                    std::string koordinat = cv::format("(%.2lf, %.2lf, %.2lf)", x, y, z);
                     std::string jarak_z = cv::format("Jarak Z = %.2lf cm", z);
                     std::string nama_objek = "Nama Objek: " + (label[j]);
                     std::string lebar_objek = "Lebar Objek: " + std::to_string((double)w_real[j]);
 
-                    std::cout << "Objek " << label[j] << " Koordinatnya di X: " << x << ", Y: " << y << "dengan jarak: " << z << "cm" << std::endl;
+                    std::cout << "Objek " << label[j] << " Koordinatnya di X: " << x << ", Y: " << y << ", Z: "<< z << "dengan jarak: " << z << "cm" << std::endl;
                     cv::putText(resized, koordinat, cv::Point (20,60), cv::FONT_HERSHEY_SIMPLEX, 0.8, cv::Scalar(0, 255, 0), 2);
                     cv::putText(resized, jarak_z, cv::Point (20,80), cv::FONT_HERSHEY_SIMPLEX, 0.8, cv::Scalar(255, 255, 0), 2);
                     cv::putText(resized, lebar_objek, cv::Point (20,100), cv::FONT_HERSHEY_SIMPLEX, 0.8, cv::Scalar(0, 0, 255), 2);
