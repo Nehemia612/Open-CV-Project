@@ -1,0 +1,22 @@
+%YAML:1.0
+---
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 9.4063849191547297e+02, 0., 2.6111937122196235e+02, 0.,
+       9.3455635115179791e+02, 2.8010340467641140e+02, 0., 0., 1. ]
+distortion_coefficients: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -5.3218684171118601e-02, 9.2282023795777779e-01,
+       1.7583830009811469e-02, -2.1748798762682368e-02,
+       -1.9752062205052878e+00 ]
+focal_length_x: 9.4063849191547297e+02
+focal_length_y: 9.3455635115179791e+02
+principal_point_x: 2.6111937122196235e+02   
+principal_point_y: 2.8010340467641140e+02
+board_width: 8
+board_height: 6
+square_size: 23.
